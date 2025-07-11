@@ -12,7 +12,7 @@ Its main goal is to apply what I've learned so far about classes, objects, ans O
 - OOP concepts applied: classes, inheritance, encapsulation, etc.
 
 ## Technologies
-- Java JDK 17
+- Java JDK 17 only
 
 ## Future Improvements
 - Add a scoring system

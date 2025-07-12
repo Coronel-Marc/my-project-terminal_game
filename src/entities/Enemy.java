@@ -1,5 +1,9 @@
 package entities;
 
 public class Enemy extends Entity{
-    protected String typeEnemy;
+    protected String enemyType;
+
+    protected int difficultLevel;
+
+
 }

@@ -1,8 +1,5 @@
 package entities;
 
-import entities.classes.SkillClass;
-
-
 
 public class Player extends Entity{
     protected String classHability;

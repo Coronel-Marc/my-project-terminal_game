@@ -1,8 +1,7 @@
 package entities.classes;
 
-import entities.Entity;
-
 public class Warrior implements SkillClass{
+
     @Override
     public String getClassName() {
         return "";

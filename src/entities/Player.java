@@ -8,11 +8,6 @@ public class Player extends Entity{
 
     protected int level;
 
-    public Player(Warrior warrior) {
-
-    }
-
-
     public String getClassHability(){
         return classHability;
     }

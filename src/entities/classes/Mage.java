@@ -1,7 +1,5 @@
 package entities.classes;
 
-import entities.Entity;
-
 public class Mage implements SkillClass{
     @Override
     public String getClassName() {

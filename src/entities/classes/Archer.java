@@ -1,7 +1,5 @@
 package entities.classes;
 
-import entities.Entity;
-
 public class Archer implements SkillClass{
     @Override
     public String getClassName() {

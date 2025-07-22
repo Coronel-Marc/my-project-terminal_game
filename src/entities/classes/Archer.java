@@ -1,5 +1,7 @@
 package entities.classes;
 
+import entities.Entity;
+
 public class Archer implements SkillClass{
     @Override
     public String getClassName() {
@@ -16,7 +18,7 @@ public class Archer implements SkillClass{
         return 0;
     }
 
-    @Override
+
     public void useBaseAttack(Entity target) {
 
     }

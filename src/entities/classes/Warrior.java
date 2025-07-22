@@ -1,5 +1,7 @@
 package entities.classes;
 
+import entities.Entity;
+
 public class Warrior implements SkillClass{
 
     @Override
@@ -17,7 +19,7 @@ public class Warrior implements SkillClass{
         return 0;
     }
 
-    @Override
+
     public void useBaseAttack(Entity target) {
 
     }

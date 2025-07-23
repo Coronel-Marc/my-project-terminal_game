@@ -43,6 +43,7 @@ public class Player extends Entity{
         this.stamina = stamina;
         this.baseDamage = baseDamage;
     }
+    public Player(){};
 
     @Override
     public String greeting(){

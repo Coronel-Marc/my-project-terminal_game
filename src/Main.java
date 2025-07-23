@@ -25,6 +25,19 @@ public class Main {
         System.out.println(enemy.greeting());
         System.out.println(player.toPunch(enemy));
 
+        boolean inLoop = true;
+        /*
+        * I'm trying to create a new player using Scanner class.
+        * */
+        while (inLoop){
+            Player player2 = new Player();
+            System.out.print("Welcome to my terminal game.\nChoose your name: ");
+            player2.setName(scanner.nextLine());
+            System.out.println(player2.getName());
+
+            inLoop = false;
+        }
+
 
     }
 }
@@ -32,5 +45,5 @@ public class Main {
 class gameLoop{
     boolean inLoop = false;
 
-    
+
 }

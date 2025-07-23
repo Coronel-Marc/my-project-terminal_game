@@ -18,8 +18,4 @@ public class Archer implements SkillClass{
         return 0;
     }
 
-
-    public void useBaseAttack(Entity target) {
-
-    }
 }

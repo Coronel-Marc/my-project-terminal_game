@@ -3,6 +3,7 @@ package entities.classes;
 import entities.Entity;
 
 public class Mage implements SkillClass{
+
     @Override
     public String getClassName() {
         return "";
@@ -16,10 +17,5 @@ public class Mage implements SkillClass{
     @Override
     public double getBaseDefense(double defense) {
         return 0;
-    }
-
-
-    public void useBaseAttack(Entity target) {
-
     }
 }

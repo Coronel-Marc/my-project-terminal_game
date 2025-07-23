@@ -1,3 +1,6 @@
+import entities.Enemy;
+import entities.Player;
+
 import java.util.Scanner;
 
 public class Main {
@@ -5,6 +8,29 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        Player player = new Player(
+                "Jon",
+                100,
+                100,
+                10
+        );
+        Enemy enemy = new Enemy(
+                "Orc",
+                100,
+                100,
+                10
+        );
+
+        System.out.println(player.greeting());
+        System.out.println(enemy.greeting());
+        System.out.println(player.toPunch(enemy));
+
 
     }
+}
+
+class gameLoop{
+    boolean inLoop = false;
+
+    
 }

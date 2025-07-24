@@ -38,7 +38,11 @@ public class GameLoop {
                     System.out.println("Your enemy is: \n" + enemy.presentYourSelf());
                     break;
                 case 3:
-                    System.out.println(player.toPunch(player.getBaseDamage(),enemy));
+                    double damage = player.getBaseDamage();
+                    System.out.println(player.toPunch(damage,enemy));
+                    break;
+                case 4:
+
                     break;
                 case 0:
                     System.out.println("Closing game...bye");

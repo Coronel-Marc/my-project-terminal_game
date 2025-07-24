@@ -1,27 +1,54 @@
 package entities;
 
-public abstract class Entity {
-    String name = "";
-    double health = 0;
-    double stamina = 0 ;
-    double baseDamage = 0;
+public class Entity {
+    protected String name = "";
+    protected double health = 0;
+    protected double stamina = 0 ;
+    protected double baseDamage = 0;
 
-    String getName() {
+    public String getName() {
         return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    double getHealth() {
+    public double getHealth() {
         return health;
     }
+    public void setHealth(double health) {
+        this.health = health;
+    }
 
-    double getStamina() {
+    public double getStamina() {
         return stamina;
     }
+    public void setStamina(double stamina) {
+        this.stamina = stamina;
+    }
 
-    double getBaseDamage() {
+    public double getBaseDamage() {
         return baseDamage;
     }
-    String greeting(){
+
+    public String greeting(){
         return "Hi! I'm" + name;
     }
+
+    public String presentYourSelf() {
+        return String.format("""
+                        \
+                        Name: %s
+                        Health: %.2f
+                        Stamina: %.2f
+                        Base Damage: %.2f
+                        """,
+                name,health,stamina,baseDamage
+        );
+    }
+
+    public void getHit(double damage) {
+        health -= damage;
+    }
+
 }

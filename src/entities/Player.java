@@ -3,11 +3,12 @@ package entities;
 
 public class Player extends Entity{
 
+    /*
     String name;
     double health;
     double stamina;
     double baseDamage;
-
+    */
 
     @Override
     public String getName() {
@@ -37,20 +38,28 @@ public class Player extends Entity{
         this.baseDamage = baseDamage;
     }
 
+    /*
     public Player (String name, double health, double stamina, double baseDamage){
         this.name = name;
         this.health = health;
         this.stamina = stamina;
         this.baseDamage = baseDamage;
+    }*/
+
+    public Player(){
+        this.name = "Wanderer";
+        this.health = 80;
+        this.stamina = 80;
+        this.baseDamage = 9;
     }
-    public Player(){};
 
     @Override
     public String greeting(){
         return "Hi! I'm " + name;
     }
 
-    public String toPunch( Entity target){
+    public String toPunch(double damage, Entity target){
+        target.getHit(damage);
         return "Punching " + target.getName();
     }
 }

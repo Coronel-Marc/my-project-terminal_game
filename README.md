@@ -2,7 +2,7 @@
 
 ### About
 
-This project is a simple terminal-based game created to help me practice **Objecte-Oriented Programming (OOP)** concepts in Java.
+This project is a simple terminal-based game created to help me practice **Object-Oriented Programming (OOP)** concepts in Java.
 
 Its main goal is to apply what I've learned so far about classes, objects, ans OOP principles such as encapsulation, inheritance, and polymorphism.
 
@@ -17,3 +17,4 @@ Its main goal is to apply what I've learned so far about classes, objects, ans O
 ## Future Improvements
 - Add a scoring system
 - improve game difficult
+## Screenshots (Soon)

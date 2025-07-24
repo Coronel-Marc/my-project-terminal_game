@@ -10,18 +10,8 @@ public class GameLoop {
         Scanner scanner = new Scanner(System.in);
 
 
-        Player player = new Player(
-                "unknown",
-                100,
-                100,
-                10
-        );
-        Enemy enemy = new Enemy(
-                "Orc",
-                80,
-                50,
-                7
-        );
+        Player player = new Player();
+        Enemy enemy = new Enemy();
 
         System.out.print("Welcome to my terminal game.\nChoose your name: ");
         player.setName(scanner.nextLine());
@@ -32,29 +22,30 @@ public class GameLoop {
             System.out.println("Choose an option: ");
             System.out.println(
                     """
-                    1 - Greetings
-                    2 - Check your enemy
-                    3 - Check your status
+                    1 - Present your self
+                    2 - Check status enemy
+                    3 - Hit target
+                    4 - Start combat (soon)
                     0 - Exit
                     """
             );
             int option = scanner.nextInt();
             switch (option) {
                 case 1:
-                    System.out.println(player.greeting());
+                    System.out.println(player.presentYourSelf());
                     break;
                 case 2:
-                    System.out.println("Your enemy is: " + enemy.getName());
+                    System.out.println("Your enemy is: \n" + enemy.presentYourSelf());
                     break;
                 case 3:
-                    System.out.println("health: " + player.getHealth()+"\nStamina: "+player.getStamina());
+                    System.out.println(player.toPunch(player.getBaseDamage(),enemy));
                     break;
                 case 0:
                     System.out.println("Closing game...bye");
                     inLoop = false;
                     break;
                 default:
-                    System.out.println("Wrong choice bro...");
+                    System.out.println("Wrong choice...");
             }
         }
         scanner.close();

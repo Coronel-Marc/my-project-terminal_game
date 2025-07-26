@@ -1,20 +1,24 @@
 package entities.classes;
 
+import entities.Player;
+
 public class Warrior implements SkillClass{
 
+
     @Override
-    public String getClassName() {
-        return "";
+    public String getName() {
+        return "Warrior";
     }
 
     @Override
-    public double getBaseAttack(double attack) {
-        return 0;
-    }
+    public void applyBonuses(Player player) {
+        double healthBonus = 30;
+        double staminaBonus = 10;
+        double damageBonus = 50;
 
-    @Override
-    public double getBaseDefense(double defense) {
-        return 0;
-    }
+        player.setHealth(player.getHealth() + healthBonus);
+        player.setStamina(player.getStamina() + staminaBonus);
+        player.setBaseDamage(player.getBaseDamage() + damageBonus);
 
+    }
 }

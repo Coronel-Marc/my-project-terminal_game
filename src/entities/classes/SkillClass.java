@@ -1,8 +1,10 @@
 package entities.classes;
 
+import entities.Player;
+
 public interface SkillClass {
-    double damage = 0;
-    String getClassName();
-    double getBaseAttack(double attack);
-    double getBaseDefense(double defense);
+    String getName();
+    double bonus = 0;
+
+    void applyBonuses(Player player);
 }

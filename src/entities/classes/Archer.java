@@ -1,21 +1,18 @@
 package entities.classes;
 
 import entities.Entity;
+import entities.Player;
 
 public class Archer implements SkillClass{
+
+
     @Override
-    public String getClassName() {
+    public String getName() {
         return "";
     }
 
     @Override
-    public double getBaseAttack(double attack) {
-        return 0;
-    }
+    public void applyBonuses(Player player) {
 
-    @Override
-    public double getBaseDefense(double defense) {
-        return 0;
     }
-
 }

@@ -2,6 +2,8 @@ package world;
 
 import entities.Enemy;
 import entities.Player;
+import entities.classes.SkillClass;
+import entities.classes.Warrior;
 
 import java.util.Scanner;
 
@@ -11,11 +13,27 @@ public class GameLoop {
 
 
         Player player = new Player();
+        SkillClass skillClass = new Warrior();
+        skillClass.applyBonuses(player);
+
         Enemy enemy = new Enemy();
 
-        System.out.print("Welcome to my terminal game.\nChoose your name: ");
-        player.setName(scanner.nextLine());
-        System.out.println("Greetings, " + player.getName());
+        System.out.print("Welcome to my terminal game.\n");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+        }
+
+        System.out.print("What is your name?: ");
+        player.setName(scanner.next());
+        System.out.println("It's a good name... for a hollow... Hahaha\n");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("Anyway, what do you want here...? What do you do?");
 
         boolean inLoop = true;
         while (inLoop){
